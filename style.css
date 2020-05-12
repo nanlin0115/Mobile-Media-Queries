@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-image: url("homebg.PNG");
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #ccc;
+    height: 50px;
+    font-size: 1.5vw;
+    padding-top: 5px;
+    background-color: rgba(204, 204, 204, 0.212);
+    color: black;
+}
+.nav a:hover{
+    color: black;
+}
+.mainbody{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    font-size: xx-large;
+    border: 2px solid #cccc;
+    height: 600px;
+    justify-content: space-around;
+    font-family: 'Viaoda Libre', cursive;
+    color: rgb(22, 15, 54);
+}
+img {
+    float: left;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+
+.backg{
+    margin-top: 10%;
+}
+.home{
+    color: gray;
+    font-family: 'Indie Flower', cursive;
+}
+.biography{
+    color: gray;
+    font-family: 'Indie Flower', cursive;
+}
+.painting_styles{
+    color: gray;
+    font-family: 'Indie Flower', cursive;
+}
+
+/* media queries*/
+@media only screen and (max-width: 600px){
+    body{
+        margin: 0;
+        background-color: black;
+    }
+    .nav{
+        display: grid;
+        justify-content: space-around;
+        border: 2px solid #ccc;
+        height: 300px;
+        font-size: 50px;
+        padding-top: 5px;
+        background-color: rgba(204, 204, 204, 0.212);
+        grid-template-columns: repeat(1,1fr);
+        color: black;
+    }
+    .nav a:hover{
+        color: white;
+    }
+    .mainbody{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+        font-size: xx-large;
+        border: 2px solid #cccc;
+        height: 600px;
+        justify-content: space-around;
+        font-family: 'Viaoda Libre', cursive;
+        color: rgb(249, 248, 252);
+    }
+    img {
+        float: center;
+        width: 100%;
+        height: 100%;
+      }
+      .backg{
+        margin-top: 15%;
+    }
+}
